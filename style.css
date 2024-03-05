@@ -1,0 +1,1122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    background-color: rgb(79, 185, 214);
+}
+.header-container{
+    min-width: 100%;
+    height: auto;
+}
+.navbar{
+    background-color: rgb(79, 185, 214);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 2;
+}
+.navbar i{
+    display: none;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    color: #fff;
+    transition: calc(0.5s);
+}
+.navbar ul li :hover{
+    color: aliceblue;
+    text-shadow: 0 0 8px black;
+    font-size: 17px;
+}
+.navbar input, button{
+    height: 30%;
+    align-self: center;
+    position: relative;
+}
+.navbar input{
+    position: relative;
+    left: 90px
+}
+.navbar button{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+/* Training secction*/
+.training{
+    min-width: 100%;
+    min-height: 500px;
+    position: relative;
+    top: 100px;
+}
+.vid-train iframe{
+    min-width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+.train-content{
+    min-width: 100%;
+    min-height: 150px;
+    background-color: #333;
+    position: relative;
+    bottom: 4px;
+}
+.credential{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: rgb(48, 144, 223);
+}
+.credential i{
+    margin-bottom: 10px;
+}
+.credential a{
+    color: rgb(48, 144, 223);
+}
+.credential a:hover{
+    color: rgb(17, 100, 168);
+}
+.train-grid{
+    position: relative;
+    bottom: 4px;
+    min-width: 100%;
+    min-height: auto;
+    background-color: rgb(79, 185, 214);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    padding: 20px;
+    grid-gap: 15px;
+}
+.item{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+.item a{
+    color: white;
+    background-color: rgba(79, 185, 214, 0.445);
+    border: 0px solid black;
+    padding: 5px 30px;
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+}
+.item p{
+    min-width: 100%;
+    min-height: auto;
+    position: absolute;
+    top: 185px;
+    left: -0px;
+    background-color: #36353556;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+.item:hover{
+    transform: scale(1.03);
+}
+.item:hover p{
+    display: inline;
+}
+.item a:hover{
+    background-color: rgb(48, 157, 187);
+}
+.item1{
+    background-image: url(./Images/Training/trainedpuppy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item2{
+    background-image: url(./Images/Training/gooddog.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item3{
+    background-image: url(./Images/Training/dog\ leashed2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item4{
+    background-image: url(./Images/Training/dogplayng.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item5{
+    background-image: url(./Images/Training//dogsport.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item6{
+    background-image: url(./Images/Training/tricks.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item7{
+    background-image: url(./Images/Training/TWC_COMPETITION_HEELING_PART_ONE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item8{
+    background-image: url(./Images/Training/importance.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item9{
+    background-image: url(./Images/Training/seminary.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.proof{
+    min-height: 150px;
+    min-width: 100%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+}
+.proof-data{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(48, 144, 223);
+}
+.course{
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-image: url(./Images/Training/man-training-dog.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.course-content{
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 20px;
+    background-color: rgba(79, 185, 214, 0.63);
+    color: #fff;
+}
+.course-content h3,h4{
+    margin-bottom: 15px;
+}
+.course-content a{
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgb(79, 185, 214); 
+    padding: 5px 10px;
+    font-size: 25px;
+}
+.course-content a:hover{
+    background-color: #333;
+}
+/*training section*/
+/* Care Section*/
+.card-bg{
+    min-width: 100%;
+    min-height: 1300px;
+    background-image: url(./Images/Care/lightblue\ pattern.jpg);
+    background-position:top;
+    background-size:auto;
+}
+.card-container{
+    min-width: 100%;
+    max-height: 1300px;
+    position: relative;
+    top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+.card{
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgb(255, 255, 255)
+}
+.card a{
+    background-color: rgb(48, 144, 223);
+}
+.card h5{
+    color: rgb(48, 144, 223);
+}
+.care{
+    min-width: 100%;
+    min-height: auto;
+    border-top: 10px solid rgb(79, 185, 214)
+}
+.care-content{
+    min-width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(128, 194, 174, 0.452);
+    padding-top: 20px;
+}
+.care-content a{
+    color: black;
+    border-left: 2px solid rgb(0, 0, 0);
+    padding-left: 10px;
+}
+.care-content a:hover{
+    color: #333;
+}
+/* Care Secction*/
+/*Breeds section*/
+.welcoming{
+    min-width: 100%;
+    min-height: 150px;
+    position: relative;
+    top: 100px;
+    background-color: #333;
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(./Images/breeds/GettyImages-175928868-120f47906f4849969fcdab28e2e4f494.jpg);
+    background-size: contain;
+    background-position: top;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+.breeds{
+    text-shadow: 0 0 5px black;
+}
+.carousel-bg{
+    height: 900px;
+    background-image: linear-gradient(rgba(16, 16, 16, .4), rgba(16, 16, 16, .5)), url(./Images/breeds/dogs\ grey\ fabric\ cute\ dog\ design\ best\ dogs\ grey\ fabric\ dogs\ dog\ breed\ fabric\ dog\ print\ dog\ pattern\ best\ dog\ design.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+}
+.carousel{
+    max-width: 80%;
+    min-height: auto;
+    position: relative;
+    top: 100px;
+    left: 120px;
+}
+.carousel img{
+    height: 100vh;
+    width: 100%;
+    object-fit: fill;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.carousel-btn{
+    position: relative;
+    top: -300px;
+}
+.carousel-caption{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(79, 185, 214, 0.301);
+    color: #000;
+    text-shadow: 0 0 5px white;
+}
+.carousel-caption a{
+    color: #000;
+    text-shadow: 0 0 5px white;
+    font-weight: bold;
+}
+.carousel-caption a:hover{
+    color: rgb(48, 144, 223);
+}
+.breed-menu{
+    background-color: rgb(255, 255, 255);
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.breed-galery{
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    gap: 20px;
+    padding: 20px;
+}
+.idog{
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.idog a{
+    color: black;
+    font-weight: bold;
+    position: relative;
+    border: 1px solid black;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: rgba(79, 185, 214, 0.247);
+}
+.idog a:hover{
+    color: rgb(48, 144, 223);
+}
+.idog1{
+    background-image: url(./Images/breeds/breed/bearded\ collie.webp);
+    background-size: cover;
+    background-position: center;
+}
+.idog2{
+    background-image: url(./Images/breeds/breed/bloodhound.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.idog3{
+    background-image: url(./Images/breeds/breed/Border-Collie-de-ojos-azules-770x470.webp);
+ background-size: cover;
+    background-position: center;
+}
+.idog4{
+    background-image: url(./Images/breeds/breed/chihuahua.webp);
+ background-size: cover;
+    background-position: center;
+}
+.idog5{
+    background-image: url(./Images/breeds/breed/dobberman.webp);
+ background-size: cover;
+    background-position: center;
+}
+.idog6{
+    background-image: url(./Images/breeds/breed/german\ shepherd.jpg);
+  background-size: cover;
+    background-position: center;
+}
+.idog7{
+    background-image: url(./Images/breeds/breed/Labrador\ Retriever.jpg);
+ background-size: cover;
+    background-position: center;
+}
+.idog8{
+    background-image: url(./Images/breeds/breed/Pug.webp);
+ background-size: cover;
+    background-position: center;
+}
+.idog9{
+    background-image: url(./Images/breeds/breed/sanbernardo.webp);
+ background-size: cover;
+    background-position: center;
+}
+.idog10{
+    background-image: url(./Images/breeds/breed/shiba\ inu.jpg);
+ background-size: cover;
+    background-position: top;
+}
+.idog11{
+    background-image: url(./Images/breeds/breed/Welsh\ Corgi.jpg);
+ background-size: cover;
+    background-position: center;
+}
+.idog12{
+    background-image: url(./Images/breeds/breed/West\ Highland\ White\ Terrier.jpg);
+ background-size: cover;
+    background-position: center;
+}
+.breed-next{
+    min-width: 100%;
+    min-height: auto;
+    text-align: center;
+    word-spacing: 15px;
+}
+.breed-next a{
+    position: relative;
+    color: white;
+    border: 1px solid black;
+    padding: 0px 5px;
+    background-color: rgb(48, 144, 223);
+}
+.breed-next a:hover{
+    background-color: rgb(17, 100, 168);
+}
+/*Breeds section*/
+/*contact section*/
+.flex-container{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333333b9;
+    margin-bottom: -10px;
+}
+.form{
+    position: relative;
+    top: 100px;
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    margin-left: 100px;
+    padding-bottom: 150px;
+}
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid rgb(79, 185, 214);
+    background-color: transparent;
+    color: #fff;
+}
+.form__input:focus{
+    background: linear-gradient(to bottom, transparent, #222);
+    outline: none;
+    border-bottom: 3px solid rgb(79, 185, 214);
+}
+.form textarea{
+    min-height: 140px;
+    resize: none;
+}
+.form-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+}
+.form-img img{
+    position: relative;
+    top: 100px;
+    width: 60%;
+    border-radius: 30%;
+    background-color: #fff;
+    padding: 3px;
+}
+.form input[type="submit"] {
+    background-color: rgb(79, 185, 214);
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover {
+    background-color: rgb(48, 144, 223);
+    border-bottom: none;
+    padding: 12px;
+}
+/*contact section*/
+.header-content{
+    background-color: rgb(79, 185, 214);
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(./Images/Backgrounds/possible\ one.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    padding-top: 90px;
+    color: #fff;
+}
+.header-txt{
+    display: inline-block;
+    border-left: 5px solid rgb(79, 185, 214);
+    border-radius: 10px;
+    background-color: rgba(143, 209, 228, 0.425);
+    padding: 20px;
+    position: relative;
+    right: 20px;
+}
+.follow-section{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(48, 157, 187);
+    position: relative;
+    top: 100px;
+    display: flex;
+    border: 5px solid beige;
+    color: #fff;
+}
+.ncuriosity{
+    width: 100%;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.ncuriosity h3{
+    margin-bottom: 10px;
+}
+.ncuriosity a{
+    color: #fff;
+    background-color: rgb(48, 144, 223);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.ncuriosity a:hover{
+    text-shadow: 0 0 5px black;
+    background-color: #333;
+    padding: 10px 15px;
+    transition: calc(0.3s);
+}
+.nsocial{
+    width: 100%;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.nsocial h3{
+    margin-bottom: 10px;
+}
+.nsocial a{
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: #fff;
+}
+.nsocial a :hover{
+    color: rgb(36, 34, 34);
+    text-shadow: 0 0 5px black;
+}
+.menu{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    position: relative;
+    top: 100px;
+    color: rgb(79, 185, 214);
+}
+.menu p{
+    color: #ffffff;
+}
+.menu-content{
+    display: flex;
+    background-color: #fff;
+}
+.menu-content h3{
+    margin-bottom: 10px;
+    border-left: 3px solid rgb(48, 144, 223);
+    padding-left: 5px;
+}
+.menu-content p{
+    margin-bottom: 10px;
+}
+.menu-content a{
+    color: rgb(79, 185, 214);
+    border-left: 3px solid rgb(2, 128, 163);
+    padding-left: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.menu-content a:hover{
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    border: 1px solid black;
+    border-radius: 35px;
+    background-color: rgb(48, 144, 223);
+    transition: calc(0.8s);
+}
+.menu-training{
+    border-right: 2px solid black;
+    padding: 20px;
+    background-image:linear-gradient(rgba(54, 54, 54, 0.8), rgba(59, 58, 58, 0.9)), url(./Images/Backgrounds/couplewithdog.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.menu-care{
+    padding: 20px;
+    background-image:linear-gradient(rgba(54, 54, 54, 0.8), rgba(59, 58, 58, 0.9)), url(./Images/Backgrounds/doglyingonhand.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.menu-breeds{
+    height: 300px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(15, 15, 15, 0.9)), url(./Images/Backgrounds/bunchofdogs.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(255, 255, 255);
+    padding: 20px;
+}
+.menu-breeds h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 0 0 1px #fff;
+}
+.menu-breeds p{
+    margin-bottom: 2px;
+}
+.menu-breeds a{
+    margin-top: 20px;
+    color: rgb(79, 185, 214);
+    padding: 11px 20px;
+}
+.menu-breeds a:hover{
+    color: #fff;
+    border: 1px solid black;
+    background-color: rgba(79, 185, 214, 0.493);
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px white;
+}
+.bg-video{
+    width: 100%;
+    min-height: 500px;
+    padding-left: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.bg-video video{
+    width: 600px;
+    height: 500px;
+    object-fit:cover;
+}
+.bg-txt{
+    width: 53%;
+    height: 400px;
+    position: relative;
+    left: 20px;
+    top:100px;
+    text-align:center;
+    padding: 10px;
+    background-color: rgba(48, 157, 187, 0.459);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.bg-txt h3{
+    margin-top: 30px;
+}
+.bg-txt p{
+    margin-top: 30px;
+}
+.bg-txt a{
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    border: 2px solid rgba(48, 157, 187, 0);
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+.bg-txt a:hover{
+    background-color: rgb(2, 128, 163);
+    text-shadow: 0 0 5px white;
+    transition: calc(0.3s);
+}
+.footer{
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.footer ul li{
+    margin:10px;
+    position: relative;
+    right: 50px;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover{
+    color: rgb(79, 185, 214);
+}
+.footer i{
+    letter-spacing: 8px;
+    position: relative;
+    right: 20px;
+    font-size: 30px;
+}
+.footer p{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    right: 50px;
+}
+.footer img{
+    height: 130px;
+    width: 130px;
+}
+@media only screen and ( max-width:1060px) {
+    .navbar input{
+        display: none;
+    }
+    .navbar button{
+        display: none;
+    }
+    .navbar i{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: white;
+        border: 1px solid #333;
+        border-radius: 30px;
+        padding: 10px;
+        background-color: #333;
+    }
+    .navbar .fa-bars{
+        display: none;
+    }
+    .item p{
+        min-width: 100%;
+        min-height: auto;
+        position: absolute;
+        top: 165px;
+        left: -0px;
+        background-color: #36353556;
+        padding: 20px;
+        border-radius: 5px;
+        display: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+}
+@media only screen and ( max-width:960px) {
+    .bg-video{
+        width: 100%;
+        min-height: 500px;
+
+    }
+    .bg-video video{
+        width: 40%;
+        min-height: 400px;
+    }
+    .bg-txt{
+        max-width: 100%;
+        max-height: 400px;
+    }
+    .bg-txt h3{
+        margin-bottom: 5px;
+    }
+    .bg-txt p{
+        margin-top: 0px;
+    }
+    .bg-txt a{
+    position: relative;
+    top: 12px;
+    }
+    .train-grid{
+        position: relative;
+        bottom: 4px;
+        min-width: 100%;
+        min-height: auto;
+        background-color: rgb(79, 185, 214);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 250px);
+        padding: 20px;
+        grid-gap: 15px;
+    }
+    .item{
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+    .item p{
+        min-width: 100%;
+        min-height: auto;
+        position: absolute;
+        top: 185px;
+        left: -0px;
+        background-color: #36353556;
+        padding: 20px;
+        border-radius: 5px;
+        display: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+    .item9{
+        grid-column: 1/3;
+    }
+    .course{
+        min-height: 100vh;
+        min-width: 100%;
+        position: relative;
+        top: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        background-image: url(./Images/Training/man-training-dog.jpg);
+        background-position: top;
+        background-size: cover;
+    }
+    .course-content{
+        border: 3px solid black;
+        border-radius: 7px;
+        padding: 20px;
+        background-color: rgba(79, 185, 214, 0.63);
+        color: #fff;
+    }
+    .course-content a{
+        color: #fff;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: rgb(79, 185, 214); 
+        padding: 5px 10px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:784px) {
+    .item p{
+        min-width: 100%;
+        min-height: auto;
+        position: absolute;
+        top: 165px;
+        left: -0px;
+        background-color: #36353556;
+        padding: 20px;
+        border-radius: 5px;
+        display: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+    .course{
+        min-height: 100vh;
+        min-width: 100%;
+        position: relative;
+        top: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        background-image: url(./Images/Training/man-training-dog.jpg);
+        background-position: top;
+        background-size: cover;
+    }
+    .course-content{
+        border: 3px solid black;
+        border-radius: 7px;
+        padding: 20px;
+        background-color: rgba(79, 185, 214, 0.63);
+        color: #fff;
+    }
+    .course-content a{
+        color: #fff;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: rgb(79, 185, 214); 
+        padding: 5px 10px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .navbar{
+        height: auto;
+        min-width: 100%;
+        position: fixed;
+        z-index: 100000;
+    }
+    .navbar ul li{
+        display: none;
+    }
+    .navbar .fa-bars{
+        display: initial;
+        position: relative;
+        right: 110px;
+    }
+    .fa-magnifying-glass{
+        position: relative;
+        left:50px
+    }
+    .logo img{
+        position: relative;
+        right: 50px;
+    }
+    .header-txt{
+        min-height: 100px;
+        max-width: 300px;
+        position: relative;
+        bottom: 40px;
+    }
+    .follow-section{
+        min-height: 250px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ncuriosity{
+        min-height: 100px;
+        max-width: 100%;
+        padding-top: 15px;
+    }
+    .nsocial{
+        min-height: 100px;
+        max-width: 100%;
+        border-top: 2px solid black;
+        padding-top: 30px;
+    }
+    .menu-content{
+        min-height: 250px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-training{
+        border-right: 0px;
+        border-bottom:1px solid black ;
+    }
+    .menu-care{
+        height: 160px;
+    }
+    .menu-breeds{
+        padding: 20px;
+        z-index: 10;
+        position: relative;
+    }
+    .menu-breeds a{
+        position: relative;
+        bottom: 10px;
+    }
+    .bg-video{
+        min-height: 100vh;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bg-video video{
+        height: 100%;
+        min-width: 100%;
+        padding-right: 10px;
+        position: absolute;
+        object-fit: cover;
+
+    }
+    .bg-txt{
+        background-color: rgba(143, 210, 228, 0.295);
+        min-height: 500px;
+        min-width: 90%;
+        position: relative;  
+        top: 120px; 
+    }
+    .footer{
+        min-height:200px;
+        min-width: 100%;
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        flex-flow: wrap column; 
+    }
+    .footer ul li a{
+        position: relative;
+        bottom: 200px;
+        left: 80px;
+    }
+    .footer i{
+        position: relative;
+        bottom: 250px;
+        left: 20px;
+    }
+    .footer p{
+        position: relative;
+        bottom: 200px;
+        left: 10px;
+        font-size: 18px;
+    }
+    .footer img{
+        position: relative;
+        right: 70px;
+        top: 30px;
+    }
+    .train-grid{
+        position: relative;
+        bottom: 4px;
+        min-width: 100%;
+        min-height: auto;
+        background-color: rgb(79, 185, 214);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 250px);
+        padding: 20px;
+        grid-gap: 15px;
+    }
+    .item{
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+    .item p{
+        min-width: 100%;
+        min-height: auto;
+        position: absolute;
+        top: 185px;
+        left: -0px;
+        background-color: #36353556;
+        padding: 20px;
+        border-radius: 5px;
+        display: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+    .item9{
+        grid-column: 1/2;
+    }
+    .course{
+        min-height: 100vh;
+        min-width: 100%;
+        position: relative;
+        top: 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        background-image: url(./Images/Training/man-training-dog.jpg);
+        background-position: top;
+        background-size: cover;
+    }
+    .course-content{
+        border: 3px solid black;
+        border-radius: 7px;
+        padding: 10px;
+        background-color: rgba(79, 185, 214, 0.63);
+        color: #fff;
+    }
+    .course-content a{
+        color: #fff;
+        border: 2px solid black;
+        background-color: rgb(79, 185, 214); 
+        padding: 5px 10px;
+        font-size: 25px;
+    }
+}
+
